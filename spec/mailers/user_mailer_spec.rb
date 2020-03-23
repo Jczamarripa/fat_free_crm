@@ -17,7 +17,7 @@ describe UserMailer do
       let(:mail) { UserMailer.assigned_entity_notification(account, assigner) }
 
       it "sets fatfree as the sender" do
-        expect(mail.from).to eql(["noreply@fatfreecrm.com"])
+        expect(mail.from).to eql(["no-reply@gc-track.com"])
       end
 
       it "sets user 'assignee@example.com' as recipient" do
@@ -42,7 +42,7 @@ describe UserMailer do
       let(:mail) { UserMailer.assigned_entity_notification(contact, assigner) }
 
       it "sets fatfree as the sender" do
-        expect(mail.from).to eql(["noreply@fatfreecrm.com"])
+        expect(mail.from).to eql(["no-reply@gc-track.com"])
       end
 
       it "sets user 'assignee@example.com' as recipient" do
@@ -67,7 +67,7 @@ describe UserMailer do
       let(:mail) { UserMailer.assigned_entity_notification(lead, assigner) }
 
       it "sets fatfree as the sender" do
-        expect(mail.from).to eql(["noreply@fatfreecrm.com"])
+        expect(mail.from).to eql(["no-reply@gc-track.com"])
       end
 
       it "sets user 'assignee@example.com' as recipient" do
@@ -92,7 +92,7 @@ describe UserMailer do
       let(:mail) { UserMailer.assigned_entity_notification(opportunity, assigner) }
 
       it "sets fatfree as the sender" do
-        expect(mail.from).to eql(["noreply@fatfreecrm.com"])
+        expect(mail.from).to eql(["no-reply@gc-track.com"])
       end
 
       it "sets user 'assignee@example.com' as recipient" do

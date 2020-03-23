@@ -42,7 +42,7 @@ describe SubscriptionMailer do
     it "should set default reply-to address if email doesn't exist" do
       allow(Setting).to receive(:dig).with(:email_comment_replies, :address).and_return("")
       allow(Setting).to receive(:dig).with(:smtp, :from).and_return("")
-      expect(mail.from).to eql(["noreply@fatfreecrm.com"])
+      expect(mail.from).to eql(["no-reply@gc-track.com"])
     end
   end
 end
