@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 # Uncomment the database that you have configured in config/database.yml
 # ----------------------------------------------------------------------
+gem 'ffcrm_endpoint'
+gem 'ffcrm_mailchimp', github: 'crossroads/ffcrm_mailchimp'
 
 case ENV['CI'] && ENV['DB']
 when 'sqlite'
